@@ -1,12 +1,12 @@
 
 # LaTeX Project Template
 
-This repository contains a template for a LaTeX project, including the setup instructions for using LaTeX in Visual Studio Code (VSCode) on Windows.
+This repository contains a template for a LaTeX project, including the setup instructions for using LaTeX in Visual Studio Code (VSCode).
 
 ## Setup Instructions
 
 ### Step 1: Install MiKTeX
-1. Download and install [MiKTeX](https://miktex.org/download) on your Windows machine.
+1. Download and install [MiKTeX](https://miktex.org/download) on your machine.
 2. Follow the default installation options and ensure that MiKTeX is added to your system's environment variables.
 3. After installation, MiKTeX may prompt you to update packages. Click "Update now" and restart MiKTeX when prompted.
 
@@ -76,7 +76,3 @@ To compile the LaTeX document, follow these steps:
 
 3. **Compile the Document:**
    - Rebuild the document to include the bibliography and citations.
-
-## License
-
-This project is licensed under the MIT License. Feel free to use and modify this template for your own LaTeX projects.
