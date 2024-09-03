@@ -1,0 +1,20 @@
+% custom.sty - Custom LaTeX Style File
+
+\ProvidesPackage{custom}  % Provide package name
+
+% Custom command to highlight text
+\newcommand{\highlight}[1]{\textbf{\textcolor{red}{#1}}}
+
+% Custom environment for a colored box
+\usepackage{tcolorbox}
+\newenvironment{mybox}[1][Important]
+  {\begin{tcolorbox}[colback=yellow!10!white, colframe=red!50!black, title=#1]}
+  {\end{tcolorbox}}
+
+% Custom section formatting
+\usepackage{titlesec}
+\titleformat{\section}
+  {\normalfont\Large\bfseries\color{blue}} % Format section titles
+  {\thesection}{1em}{}
+
+% Any other customizations can be added here
