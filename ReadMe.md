@@ -6,13 +6,67 @@ This repository contains a template for a LaTeX project, including the setup ins
 ## Setup Instructions
 
 ### Step 1: Install MiKTeX
-1. Download and install [MiKTeX](https://miktex.org/download) on your machine.
+
+#### Windows
+1. Download and install [MiKTeX](https://miktex.org/download) on your Windows machine.
 2. Follow the default installation options and ensure that MiKTeX is added to your system's environment variables.
 3. After installation, MiKTeX may prompt you to update packages. Click "Update now" and restart MiKTeX when prompted.
 
+#### Linux
+1. Install MiKTeX using your distribution's package manager:
+   - For Ubuntu or Debian-based systems:
+     ```bash
+     sudo apt-get install miktex
+     ```
+   - For Fedora:
+     ```bash
+     sudo dnf install miktex
+     ```
+   - For Arch Linux:
+     ```bash
+     sudo pacman -S miktex
+     ```
+2. After installation, you may need to run `miktexsetup finish` to complete the setup.
+
+#### macOS
+1. Download and install [MiKTeX](https://miktex.org/howto/install-miktex-mac) for macOS.
+2. Follow the default installation options.
+3. After installation, MiKTeX may prompt you to update packages. Click "Update now" and restart MiKTeX when prompted.
+
 ### Step 2: Install Strawberry Perl
+
+#### Windows
 1. Download and install [Strawberry Perl](http://strawberryperl.com/) on your Windows machine.
 2. Follow the default installation options and ensure that Strawberry Perl is added to your system's environment variables.
+
+#### Linux and macOS
+1. **Perl is typically pre-installed on Linux and macOS.** To check if Perl is installed, open a terminal and type:
+   ```bash
+   perl -v
+   ```
+   If Perl is installed, you should see the version information.
+
+2. If Perl is not installed, you can install it using your package manager:
+   - **Linux:**
+     - For Ubuntu or Debian-based systems:
+       ```bash
+       sudo apt-get install perl
+       ```
+     - For Fedora:
+       ```bash
+       sudo dnf install perl
+       ```
+     - For Arch Linux:
+       ```bash
+       sudo pacman -S perl
+       ```
+   - **macOS:**
+     - You can use Homebrew to install Perl if needed:
+       ```bash
+       brew install perl
+       ```
+
+3. No additional steps are needed for environment variables on Linux or macOS, as Perl should be accessible by default.
 
 ### Step 3: Install VSCode
 1. Download and install [Visual Studio Code](https://code.visualstudio.com/).
@@ -38,9 +92,9 @@ latex-project/
 ├── main.tex                # Main LaTeX document file
 ├── sections/
 │   ├── introduction.tex    # Section files for different parts of the document
-│   ├── methods.tex
-│   ├── results.tex
-│   └── conclusion.tex
+│   ├── YOURSECTION_1.tex
+│   ├── YOURSECTION_2.tex
+│   └── YOURSECTION_3.tex
 ├── figures/
 │   ├── figure1.png         # Images used in the document
 │   └── figure2.pdf
@@ -61,7 +115,7 @@ To compile the LaTeX document, follow these steps:
    - Make changes to your LaTeX source file as needed.
 
 3. **Build the Document:**
-   - Use the shortcut `Ctrl+Alt+B` to build the document. This will generate a PDF file in the project directory.
+   - Use `Build Latex Project` button or the shortcut `Ctrl+Alt+B` to build the document. This will generate a PDF file in the project directory.
 
 4. **View the PDF:**
    - The PDF will be opened in the integrated viewer in VSCode. If not, you can open it manually from the project directory.
